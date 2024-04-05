@@ -9,9 +9,8 @@ namespace FixEverything
     public class Plugin
     {
         internal const string HARMONYID = "com.github.ItsKaitlyn03.FixEverything";
-
-        internal static IPALogger Log { get; private set; }
         internal static Harmony HarmonyInstance { get; private set; } = new(HARMONYID);
+        internal static IPALogger Log { get; private set; }
 
         [Init]
         public Plugin(IPALogger logger)

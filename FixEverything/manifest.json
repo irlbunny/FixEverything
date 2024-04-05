@@ -3,9 +3,9 @@
   "id": "FixEverything",
   "name": "FixEverything",
   "author": "Kaitlyn",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "General quality-of-life improvements to fix issues I (Kaitlyn) have noticed inside Beat Saber.",
-  "gameVersion": "1.29.0",
+  "gameVersion": "1.35.0",
   "dependsOn": {
     "BSIPA": "^4.2.2"
   }

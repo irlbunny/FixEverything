@@ -2,7 +2,10 @@
 
 namespace FixEverything.HarmonyPatches
 {
-    [HarmonyPatch(typeof(AudioTimeSyncController), nameof(AudioTimeSyncController.Update))]
+    /// <summary>
+    /// Fixes an issue where V2 lights won't stop rotating when you pause the game.
+    /// </summary>
+    [HarmonyPatch(typeof(AudioTimeSyncController), "Update")]
     internal class AudioTimeSyncControllerUpdate
     {
         private static bool Prefix(AudioTimeSyncController.State ____state, ref float ____lastFrameDeltaSongTime)
